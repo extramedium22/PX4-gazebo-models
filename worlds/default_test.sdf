@@ -241,7 +241,7 @@
 
     <include>
       <uri>
-        model://vtol15
+        model://gryphus
       </uri>
     </include>
   </world>

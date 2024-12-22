@@ -6,14 +6,14 @@
     <static>false</static>
     <link name="base_link">
       <inertial>
-        <mass>4.195</mass>
+        <mass>5.65</mass>
         <inertia>
-          <ixx>0.089</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.088</iyy>
-          <iyz>0</iyz>
-          <izz>0.161</izz>
+          <ixx>0.18473</ixx>
+          <ixy>0。00009</ixy>
+          <ixz>-0.00876</ixz>
+          <iyy>0.14883</iyy>
+          <iyz>0.00044</iyz>
+          <izz>0.27203</izz>
         </inertia>
       </inertial>
       <gravity>true</gravity>
@@ -131,7 +131,7 @@
     <link name="left_duck_wing">
       <gravity>true</gravity>
       <self_collide>false</self_collide>
-      <pose>0.191 0.189 0.019 0 0 0</pose>
+      <pose>0.196 0.189 0.019 0 0 0</pose>
       <inertial>
         <mass>1e-16</mass>
         <inertia>
@@ -170,7 +170,7 @@
     <link name="right_duck_wing">
       <gravity>true</gravity>
       <self_collide>false</self_collide>
-      <pose>0.191 -0.189 0.019 0 0 0</pose>
+      <pose>0.196 -0.189 0.019 0 0 0</pose>
       <inertial>
         <mass>1e-16</mass>
         <inertia>
@@ -209,7 +209,7 @@
     <link name="left_main_wing">
       <gravity>true</gravity>
       <self_collide>false</self_collide>
-      <pose>-0.104 0.293 0.088 0 0 0</pose>
+      <pose>-0.098 0.293 0.088 0 0 0</pose>
       <inertial>
         <mass>1e-16</mass>
         <inertia>
@@ -248,7 +248,7 @@
     <link name="right_main_wing">
       <gravity>true</gravity>
       <self_collide>false</self_collide>
-      <pose>-0.104 -0.293 0.088 0 0 0</pose>
+      <pose>-0.098 -0.293 0.088 0 0 0</pose>
       <inertial>
         <mass>1e-16</mass>
         <inertia>
@@ -288,10 +288,10 @@
 
 
     <link name="rotor_0">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.104 -0.363 0.088 1.57 0 1.57</pose>
+      <pose>-0.098 -0.363 0.088 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -359,11 +359,12 @@
         </dynamics>
       </axis>
     </joint>
+
     <link name="rotor_1">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.104 -0.223 0.088 1.57 0 1.57</pose>
+      <pose>-0.098 -0.223 0.088 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -431,11 +432,12 @@
         </dynamics>
       </axis>
     </joint>
+
     <link name="rotor_2">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0.191 -0.189 0.019 1.57 0 1.57</pose>
+      <pose>0.196 -0.189 0.019 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -505,10 +507,10 @@
     </joint>
 
     <link name="rotor_3">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.104 0.223 0.088 1.57 0 1.57</pose>
+      <pose>-0.098 0.223 0.088 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -578,10 +580,10 @@
     </joint>
 
     <link name="rotor_4">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>-0.104 0.363 0.088 1.57 0 1.57</pose>
+      <pose>-0.098 0.363 0.088 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -649,11 +651,12 @@
         </dynamics>
       </axis>
     </joint>
+
     <link name="rotor_5">
-      <gravity>true</gravity>
+      <gravity>false</gravity>
       <self_collide>false</self_collide>
       <velocity_decay/>
-      <pose>0.191 0.189 0.019 1.57 0 1.57</pose>
+      <pose>0.196 0.189 0.019 1.57 0 1.57</pose>
       <inertial>
           <mass>0.016076923076923075</mass>
           <inertia>
@@ -730,8 +733,8 @@
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>0</motorNumber>
@@ -747,8 +750,8 @@
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>1</motorNumber>
@@ -763,8 +766,8 @@
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>2</motorNumber>
@@ -779,8 +782,8 @@
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>3</motorNumber>
@@ -795,8 +798,8 @@
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>4</motorNumber>
@@ -811,8 +814,8 @@
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1425.0</maxRotVelocity>
-      <motorConstant>5.96614e-06</motorConstant>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>2.325e-05</motorConstant>
       <momentConstant>0.01</momentConstant>
       <commandSubTopic>command/motor_speed</commandSubTopic>
       <motorNumber>5</motorNumber>
